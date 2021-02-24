@@ -30,8 +30,9 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
-    padding-top: 25%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-top: 16rem;
     text-align: center;
     color: #fff;
 }
@@ -41,5 +42,3 @@ h2 {
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
