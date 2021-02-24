@@ -28,13 +28,14 @@ Header Fixo
   font-size: 1vw;
   display: flex;
   font-weight: 200;
+  cursor: pointer;
 }
 
 
 
 .navbar-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   color: #fff;
   font-size: 1.1rem;
@@ -57,9 +58,9 @@ Header Fixo
 
 
 .navbar-inverse{
-  background: #00d646;
+  background: rgba(0, 214, 70, 0.2);
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   position: fixed;
   width: 100%;
@@ -67,6 +68,13 @@ Header Fixo
   border-bottom-style: none;
   border-bottom-width: none;
   transition: background 0.3s ease-out;
+
+  .image-logo {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50px;
+    margin: 15px;
+  }
   .menu li a:hover {
     border-bottom-style: none;
     border-bottom-width: none;
@@ -181,8 +189,8 @@ mat-icon {
 }
 
 .image-logo {
-  width: 3vw;
-  height: 3vw;
+  width: 5vw;
+  height: 5vw;
   border-radius: 50px;
   margin: 15px;
 }

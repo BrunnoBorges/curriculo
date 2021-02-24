@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { HeaderService } from './header.service';
+// import { faGit } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,7 @@ import { HeaderService } from './header.service';
 })
 export class HeaderComponent implements OnInit {
   scrolled: boolean = false;
+  // faCoffee = faCoffee;
 
   get checkedNews() {
     return this.headerService.checkedNews;
