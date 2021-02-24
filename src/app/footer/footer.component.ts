@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -12,10 +13,19 @@ export class FooterComponent implements OnInit {
   faInstagram = faInstagram;
   faLinkedin = faLinkedin;
   faWhatsapp = faWhatsapp;
+  faChevronUp = faChevronUp;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onEdit(){
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 
 }
