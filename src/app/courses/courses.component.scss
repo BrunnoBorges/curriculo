@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  min-height: 00px;
+  padding: 15% 30%;
+  background-color: #6F7A89;
+  color: #fff;
+  font-size: 16px;
+  text-align: justify;
+}
+
+  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+  @media only screen and (max-device-width: 600px) {
+    .paraImage2 {
+      background-attachment: scroll;
+    }
+    .paraImage3 {
+        background-attachment: scroll;
+      }
+  }
+  .paraImage3 {
+    background-image: url(../../assets/img/SaoPaulo2.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.5);
+  }

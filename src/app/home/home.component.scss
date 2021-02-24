@@ -1,0 +1,94 @@
+.exemplo .fundo {
+  background: rgba(111, 122, 137, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  h1 {
+    width: 45rem;
+    letter-spacing: 0.2rem;
+    margin-right: auto;
+    margin-left: 2rem;
+    padding-top: 10% !important;
+    text-align: initial;
+    font-size: 5rem;
+  }
+  label {
+    width: 80%;
+  }
+  p {
+    width: 30rem;
+    font-weight: 100;
+    padding: 2rem;
+    span {
+        margin: 0;
+        font-size: 1.3rem;
+        color: #ffffff;
+    }
+  }
+  span {
+    color: #00d646;
+    margin-left: -2rem;
+  }
+  .container {
+    width: 40%;
+    min-height: 0px;
+    background-color: #343c4f;
+    color: #fff;
+    margin-left: auto;
+    font-size: 16px;
+    margin-right: auto;
+    position: absolute;
+    padding: 2rem;
+    top: 70vh;
+    border-radius: 5px;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    text-align: justify;
+    p {
+      margin: auto;
+    }
+  }
+  .circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 15px;
+    transition: 0.3s ease;
+  }
+
+  .circulo:hover {
+    transform: rotateY(180deg);
+  }
+  .lime {
+    background: transparent;
+    border-top-width: 0px;
+    border-right-color: rgb(0, 214, 70);
+    border-right-style: solid;
+    border-right-width: 4px;
+    border-bottom-width: 0px;
+    border-left-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2rem auto;
+
+    span {
+        color: #FFF;
+        font-size: 40px;
+        margin: 0;
+    }
+  }
+}
+
+.exemplo {
+  background: url("../../assets/img/mac2.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

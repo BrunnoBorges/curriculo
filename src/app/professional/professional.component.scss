@@ -1,0 +1,60 @@
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 600px) {
+  .paraImage {
+    background-attachment: scroll;
+  }
+  .paraImage1 {
+    background-attachment: scroll;
+  }
+}
+
+.paraImage1 .fundo {
+  background: rgba(111, 122, 137, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.paraImage1 {
+  background: url("../../assets/img/work.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width: 15rem;
+    background: rgb(52, 60, 79, 0.4);
+    margin: 0 2rem;
+    padding: 1rem;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.progressBar {
+  margin: auto;
+}
+
+.fundo {
+  h2 {
+    margin-top: -3rem;
+  }
+  label {
+      color: #fff;
+  }
+  span {
+      font-size: 0.6rem;
+      color: #fff;
+  }
+}
+
