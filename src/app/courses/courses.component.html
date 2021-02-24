@@ -13,7 +13,7 @@
           </div>
       </div>
       <div class="container">
-        <h3>Cursos UX</h3>
+        <h3>Cursos UX <fa-icon [icon]="faSketch" class="lni-cake"></fa-icon> <fa-icon [icon]="faFigma" class="lni-cake"></fa-icon> </h3>
           <div class="workUx" >
             <div *ngFor="let item of cursosUx">
               <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" class="cardUx">
@@ -24,7 +24,17 @@
           </div>
       </div>
       <div class="container">
-          <h3>Cursos Front End</h3>
+          <h3>Cursos Front End 
+              <fa-icon [icon]="faHtml5" class="lni-cake"></fa-icon> 
+              <fa-icon [icon]="faCss3Alt" class="lni-cake"></fa-icon> 
+              <fa-icon [icon]="faJsSquare" class="lni-cake"></fa-icon> 
+              <fa-icon [icon]="faReact" class="lni-cake"></fa-icon> 
+              <fa-icon [icon]="faAngular" class="lni-cake"></fa-icon> 
+              <fa-icon [icon]="faGithub" class="lni-cake"></fa-icon> 
+              <fa-icon [icon]="faNpm" class="lni-cake"></fa-icon> 
+              <fa-icon [icon]="faSass" class="lni-cake"></fa-icon> 
+              <fa-icon [icon]="faBootstrap" class="lni-cake"></fa-icon> 
+          </h3>
             <div class="workFront" >
               <div *ngFor="let item of cursosDesenv">
                 <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" class="cardFront">
