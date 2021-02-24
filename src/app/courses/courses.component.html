@@ -1,3 +1,49 @@
-<div class="paraImage3">
-    <h1>CONTACT PAGE</h1>
+<section class="paraImage3">
+  <div class="fundo">
+      <h2><label>04</label> Meus cursos</h2>
+      <div class="container">
+        <h3>Formações Concluidas</h3>
+          <div class="work" >
+            <div *ngFor="let item of formacao">
+              <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" class="card">
+                <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
+                <p>{{item.name}}</p>
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+        <h3>Cursos UX</h3>
+          <div class="workUx" >
+            <div *ngFor="let item of cursosUx">
+              <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" class="cardUx">
+                <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
+                <p>{{item.name}}</p>
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+          <h3>Cursos Front End</h3>
+            <div class="workFront" >
+              <div *ngFor="let item of cursosDesenv">
+                <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" class="cardFront">
+                  <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
+                  <p>{{item.name}}</p>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3>Graduação</h3>
+              <div class="workGraduation" >
+                <div *ngFor="let item of graduacao">
+                  <a href="{{item.link}}" placement="right" ngbTooltip="Este certificado estará disponível em breve" class="cardGraduation">
+                    <fa-icon [icon]="faGraduationCap" class="lni-cake"></fa-icon>
+                    <p>{{item.name}}</p>
+                  </a>
+                </div>
+              </div>
+          </div>
   </div>
+</section>

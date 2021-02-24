@@ -1,28 +1,210 @@
-.container {
-  width: 100%;
-  min-height: 00px;
-  padding: 15% 30%;
-  background-color: #6F7A89;
-  color: #fff;
-  font-size: 16px;
-  text-align: justify;
-}
-
   /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-  @media only screen and (max-device-width: 600px) {
-    .paraImage2 {
-      background-attachment: scroll;
-    }
-    .paraImage3 {
-        background-attachment: scroll;
-      }
+@media only screen and (max-device-width: 600px) {
+  .paraImage2 {
+    background-attachment: scroll;
   }
   .paraImage3 {
-    background-image: url(../../assets/img/SaoPaulo2.jpg);
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.5);
+    background-attachment: scroll;
   }
+}
+
+.paraImage3 .fundo {
+background: rgba(111, 122, 137, 0.5);
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+}
+
+.paraImage3 {
+background: url("../../assets/img/desktopOne.jpg");
+height: 100%;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.fundo {
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    padding-top: 3rem !important;
+    label {
+      color: #00d646;
+      font-size: 3rem;
+      letter-spacing: 0;
+    }
+  }
+
+  label {
+      color: #fff;
+  }
+  span {
+      font-size: 0.6rem;
+      color: #fff;
+  }
+}
+
+.container {
+  p {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  p {
+    color: #00d646;
+    font-size: 0.85rem;
+  }
+  a {
+      cursor: pointer;
+      color: #00d646 ;
+  }
+  img {
+      width: 250px;
+      border-radius: 10px;
+      margin: 2rem;
+  }
+  .card {
+    height: 5rem;
+    background: rgb(52, 130, 14, 0.5);
+    width: 13rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+  }
+
+}
+
+.workUx {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  p {
+    color: #00d646;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  a {
+      cursor: pointer;
+      color: #00d646 ;
+  }
+  img {
+      width: 250px;
+      border-radius: 10px;
+      margin: 2rem;
+  }
+  .cardUx {
+    height: 3rem;
+    background: rgb(7, 8, 10, 0.5);
+    width: 8rem;
+    margin: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 5px;
+
+    p {
+      font-size: 0.5rem;
+    }
+  }
+  color: #fff;
+}
+
+
+.workFront {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  p {
+    color: #00d646;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  a {
+      cursor: pointer;
+      color: #00d646 ;
+  }
+  img {
+      width: 250px;
+      border-radius: 10px;
+      margin: 2rem;
+  }
+  .cardFront {
+    height: 3rem;
+    background: rgb(7, 8, 10, 0.5);
+    width: 8rem;
+    margin: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 5px;
+
+    p {
+      font-size: 0.5rem;
+    }
+  }
+}
+
+.workGraduation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  p {
+    color: #ffffff;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  a {
+      cursor: pointer;
+      color: #ffffff ;
+  }
+  img {
+      width: 250px;
+      border-radius: 10px;
+      margin: 2rem;
+  }
+  .cardGraduation {
+    height: 3rem;
+    background: rgb(7, 8, 10, 0.5);
+    width: auto;
+    padding: 0 1rem;
+    margin: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+
+    p {
+      font-size: 0.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+  .lni-cake {
+    color: #fff;
+  }
+}
