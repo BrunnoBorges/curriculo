@@ -1,1 +1,19 @@
-<p>header works!</p>
+<header class="header" id="header">
+        <nav  (scroll)="onWindowScroll($event);" [ngClass]="{'navbar-inverse': checkedNews == true, 'navbar-container': checkedNews == false }">
+            <div class="navbar-header">
+                <a routerLink="">
+                    <img src="assets/img/brunno.jpg" alt="" class="image-logo" />
+                </a>
+            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a routerLink=""> Home</a></li>
+                <li><a routerLink="/professional">Conhecimentos</a></li>
+                <li><a routerLink="/portifolio">Portifólio</a></li>
+                <li><a routerLink="/experience">Experiência</a></li>
+                <li><a routerLink="/courses">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
