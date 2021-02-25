@@ -18,7 +18,7 @@
 
 .paraImage1 {
   background: url("../../assets/img/work.jpg");
-  height: 100%;
+  height: 100vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,6 +49,7 @@
   h2 {
     font-size: 3rem;
     letter-spacing: 1rem;
+    padding-top: 30rem;
     label {
       color: #00d646;
       font-size: 3rem;
