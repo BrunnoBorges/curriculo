@@ -35,7 +35,7 @@ Header Fixo
 
 .navbar-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   color: #fff;
   font-size: 1.1rem;
@@ -70,10 +70,10 @@ Header Fixo
   transition: background 0.3s ease-out;
 
   .image-logo {
-    width: 3vw;
-    height: 3vw;
-    border-radius: 50px;
-    margin: 15px;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 2rem;
+    margin: 1rem 3rem;
   }
   .menu li a:hover {
     border-bottom-style: none;
