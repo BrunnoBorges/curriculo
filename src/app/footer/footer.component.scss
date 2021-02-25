@@ -49,14 +49,12 @@
   display: inline-block;
 }
 .site-footer .social-icons {
-  text-align: right;
+  text-align: center;
 }
 .site-footer .social-icons a {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  margin-left: 6px;
-  margin-right: 0;
   border-radius: 100%;
   background-color: #33353d;
 }
@@ -78,6 +76,27 @@
     cursor: pointer;
   }
 }
+.custom-info {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes fa-blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+.fa-blink {
+  color: #00d646;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+-webkit-animation: fa-blink .75s linear infinite;
+-moz-animation: fa-blink .75s linear infinite;
+-ms-animation: fa-blink .75s linear infinite;
+-o-animation: fa-blink .75s linear infinite;
+animation: fa-blink .75s linear infinite;
+}
+
 @media (max-width: 991px) {
   .site-footer [class^="col-"] {
     margin-bottom: 30px;

@@ -31,7 +31,35 @@ Header Fixo
   cursor: pointer;
 }
 
+.circulo {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 15px;
+  transition: 0.3s ease;
+}
 
+.circulo:hover {
+  transform: rotateY(180deg);
+}
+.lime {
+  background: transparent;
+  border-top-width: 0px;
+  border-right-color: rgb(0, 214, 70);
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-bottom-width: 0px;
+  border-left-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:2rem auto;
+
+  span {
+      color: #FFF;
+      font-size: 40px;
+      margin: 0;
+  }
+}
 
 .navbar-container {
   display: flex;
@@ -68,6 +96,12 @@ Header Fixo
   border-bottom-style: none;
   border-bottom-width: none;
   transition: background 0.3s ease-out;
+
+  span {
+    color: #FFF;
+    font-size: 20px;
+    margin: 0;
+}
 
   .image-logo {
     width: 3vw;
@@ -189,9 +223,9 @@ mat-icon {
 }
 
 .image-logo {
-  width: 9vw;
-  height: 9vw;
-  border-radius: 2rem;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 5rem;
   margin: 1rem 3rem;
 }
 
@@ -210,6 +244,7 @@ mat-icon {
     display: none;
   }
 }
+
 
 /*******************************************
 Ajuste de tela para Mobiles (Portrait)
