@@ -5,7 +5,7 @@
         <h3>Formações Concluidas</h3>
           <div class="work" >
             <div *ngFor="let item of formacao">
-              <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" class="card">
+              <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado"  target="_blank"  class="card">
                 <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
                 <p>{{item.name}}</p>
               </a>
@@ -16,7 +16,7 @@
         <h3>Cursos UX <fa-icon [icon]="faSketch" class="lni-cake"></fa-icon> <fa-icon [icon]="faFigma" class="lni-cake"></fa-icon> </h3>
           <div class="workUx" >
             <div *ngFor="let item of cursosUx">
-              <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" class="cardUx">
+              <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" target="_blank"  class="cardUx">
                 <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
                 <p>{{item.name}}</p>
               </a>
@@ -37,7 +37,7 @@
           </h3>
             <div class="workFront" >
               <div *ngFor="let item of cursosDesenv">
-                <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" class="cardFront">
+                <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" target="_blank"  class="cardFront">
                   <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
                   <p>{{item.name}}</p>
                 </a>
@@ -48,7 +48,7 @@
             <h3>Graduação</h3>
               <div class="workGraduation" >
                 <div *ngFor="let item of graduacao">
-                  <a href="{{item.link}}" placement="right" ngbTooltip="Este certificado estará disponível em breve" class="cardGraduation">
+                  <a href="{{item.link}}" placement="right" ngbTooltip="Este certificado estará disponível em breve" target="_blank"  class="cardGraduation">
                     <fa-icon [icon]="faGraduationCap" class="lni-cake"></fa-icon>
                     <p>{{item.name}}</p>
                   </a>
