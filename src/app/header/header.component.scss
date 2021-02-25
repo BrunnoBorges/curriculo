@@ -70,10 +70,10 @@ Header Fixo
   transition: background 0.3s ease-out;
 
   .image-logo {
-    width: 9vw;
-    height: 9vw;
-    border-radius: 2rem;
-    margin: 1rem 3rem;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50px;
+    margin: 15px;
   }
   .menu li a:hover {
     border-bottom-style: none;
@@ -189,10 +189,10 @@ mat-icon {
 }
 
 .image-logo {
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50px;
-  margin: 15px;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 2rem;
+  margin: 1rem 3rem;
 }
 
 /* 48em = 768px */

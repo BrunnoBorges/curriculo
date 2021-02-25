@@ -39,8 +39,8 @@ export class CoursesComponent implements OnInit {
       name: 'DESENVOLVEDOR FRONT-END'
     },
     {
-      link: 'https://cursos.alura.com.br/user/brunno-diego/career/desenvolvedor-front-end/certificate',
-      name: 'DESENVOLVEDOR FRONT-END'
+      link: 'https://cursos.alura.com.br/user/brunno-diego/course/projeto-carreira-front-end/certificate',
+      name: 'FRONT-END: PROJETO DE CONCLUSÃO'
     }
   ];
 
@@ -165,10 +165,6 @@ export class CoursesComponent implements OnInit {
     {
       link:'https://cursos.alura.com.br/user/brunno-diego/course/posicione-elementos-com-flexbox/certificate',
       name: 'FLEXBOX'
-    },
-    {
-      link:'https://cursos.alura.com.br/user/brunno-diego/course/projeto-carreira-front-end/certificate',
-      name: 'FRONT-END'
     },
     {
       link:'https://cursos.alura.com.br/user/brunno-diego/course/introducao-html-css/certificate',
