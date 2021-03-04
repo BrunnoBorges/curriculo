@@ -18,9 +18,9 @@
     font-weight: 100;
     padding: 2rem;
     span {
-        margin: 0;
-        font-size: 1.3rem;
-        color: #ffffff;
+      margin: 0;
+      font-size: 1.3rem;
+      color: #ffffff;
     }
   }
   span {
@@ -69,22 +69,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:2rem auto;
+    margin: 2rem auto;
 
     span {
-        color: #FFF;
-        font-size: 40px;
-        margin: 0;
+      color: #fff;
+      font-size: 40px;
+      margin: 0;
     }
   }
 }
 
 .exemplo {
   background: url("../../assets/img/mac2.jpg");
-  height: 100vh;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+
+/*******************************************
+Ajuste de tela para Mobiles (Portrait)
+*******************************************/
+
+// @media (min-width: 320px) and (max-width: 600px) {
+//   .exemplo {
+//     background-attachment: initial;
+//     .fundo {
+//       background: rgba(111, 122, 137, 0.5);
+//       height: 100%;
+//       position: absolute;
+//       h1 {
+//         width: 20rem;
+//         letter-spacing: 0.2rem;
+//         margin-right: auto;
+//         margin-left: 2rem;
+//         padding-top: 10% !important;
+//         text-align: initial;
+//         font-size: 2rem;
+//       }
+//       p {
+//         width: auto;
+//       }
+//       .container {
+//         width: 90%;
+//         p {
+//           font-size: 0.8rem;
+//         }
+//       }
+//       .lime {
+//         margin: 1rem 0;
+//       }
+//     }
+//   }
+// }
