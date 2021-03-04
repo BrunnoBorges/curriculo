@@ -166,6 +166,10 @@ animation: fa-blink .75s linear infinite;
 .social-icons a.instagram:hover {
   background-color: #ea4c89;
 }
+.social-icons a.gmail:hover {
+  background-color: #d93025;
+}
+
 @media (max-width: 767px) {
   .social-icons li.title {
     display: block;
