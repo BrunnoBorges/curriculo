@@ -214,3 +214,55 @@ position: relative;
     color: #fff;
   }
 }
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+  .paraImage3{
+    height: auto;
+    .fundo {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      h2 {
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+        padding-top: 5rem;
+        label {
+          font-size: 1rem;
+        }
+      }
+      .container {
+        h3 {
+          font-size: 1rem;
+        }
+        .lni-cake {
+          font-size: 0.8rem;
+        }
+        .work {
+          .card {
+            width: 10rem;
+            height: 4rem;
+            margin: 0.5rem 0;
+          }
+          p {
+            font-size: 0.65rem;
+          }
+        }
+        .workUx {
+          justify-content: center;
+          .cardUx {
+            width: 6rem;
+            text-align: center;
+          }
+        }
+        .workFront {
+          justify-content: center;
+          .cardFront {
+            width: 6rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

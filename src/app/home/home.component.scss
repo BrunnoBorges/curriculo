@@ -93,34 +93,34 @@
 Ajuste de tela para Mobiles (Portrait)
 *******************************************/
 
-// @media (min-width: 320px) and (max-width: 600px) {
-//   .exemplo {
-//     background-attachment: initial;
-//     .fundo {
-//       background: rgba(111, 122, 137, 0.5);
-//       height: 100%;
-//       position: absolute;
-//       h1 {
-//         width: 20rem;
-//         letter-spacing: 0.2rem;
-//         margin-right: auto;
-//         margin-left: 2rem;
-//         padding-top: 10% !important;
-//         text-align: initial;
-//         font-size: 2rem;
-//       }
-//       p {
-//         width: auto;
-//       }
-//       .container {
-//         width: 90%;
-//         p {
-//           font-size: 0.8rem;
-//         }
-//       }
-//       .lime {
-//         margin: 1rem 0;
-//       }
-//     }
-//   }
-// }
+@media (min-width: 320px) and (max-width: 600px) {
+  .exemplo {
+    background-attachment: initial;
+    .fundo {
+      background: rgba(111, 122, 137, 0.5);
+      height: 100%;
+      position: absolute;
+      h1 {
+        width: 20rem;
+        letter-spacing: 0.2rem;
+        margin-right: auto;
+        margin-left: 2rem;
+        padding-top: 10% !important;
+        text-align: initial;
+        font-size: 2rem;
+      }
+      p {
+        width: auto;
+      }
+      .container {
+        width: 90%;
+        p {
+          font-size: 0.8rem;
+        }
+      }
+      .lime {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
