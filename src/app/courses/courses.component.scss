@@ -18,7 +18,7 @@ top: 0;
 
 .paraImage3 {
 background: url("../../assets/img/desktopOne.jpg");
-height: 70vw;
+height: 90vw;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
@@ -232,6 +232,7 @@ position: relative;
         }
       }
       .container {
+        padding-bottom: 0.5rem;
         h3 {
           font-size: 1rem;
         }
@@ -257,6 +258,9 @@ position: relative;
         }
         .workFront {
           justify-content: center;
+          &:last-child {
+            justify-content: flex-start;
+          }
           .cardFront {
             width: 6rem;
             text-align: center;

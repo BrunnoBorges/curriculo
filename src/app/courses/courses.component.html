@@ -45,6 +45,17 @@
             </div>
         </div>
         <div class="container">
+          <h3>Cursos Extras </h3>
+            <div class="workFront" >
+              <div *ngFor="let item of moreCurses">
+                <a href="{{item.link}}" placement="top" ngbTooltip="Ver certificado" target="_blank"  class="cardFront">
+                  <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
+                  <p>{{item.name}}</p>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="container">
             <h3>Graduação</h3>
               <div class="workGraduation" >
                 <div *ngFor="let item of graduacao">

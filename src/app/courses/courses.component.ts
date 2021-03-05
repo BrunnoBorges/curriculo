@@ -196,6 +196,13 @@ export class CoursesComponent implements OnInit {
     }
   ];
 
+  moreCurses = [
+    { 
+      link: 'https://drive.google.com/file/d/1fGemgIwVNsUvrbf-vx31otoPAXoUP22D/view',
+      name: 'Scrum Foundation'
+    }
+  ]
+
   graduacao = [
     {
       link: '',
