@@ -100,6 +100,9 @@ Ajuste de tela para Mobiles (Portrait)
       background: rgba(0, 0, 0, 0.5);
       height: 100%;
       position: absolute;
+      .container {
+        top: 55vh;
+      }
       h1 {
         width: 20rem;
         letter-spacing: 0.2rem;
@@ -109,11 +112,11 @@ Ajuste de tela para Mobiles (Portrait)
         text-align: initial;
         font-size: 2rem;
       }
-      span {
-        font-size: 1rem;
-      }
       p {
         width: auto;
+        span {
+          font-size: 1rem;
+        }
       }
       .container {
         width: 90%;
