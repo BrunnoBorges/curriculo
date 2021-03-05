@@ -34,7 +34,7 @@ top: 0;
 
 .paraImage2 {
 background: url("../../assets/img/SaoPaulo.jpg");
-height: 80vw;
+height: 100vw;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
@@ -63,6 +63,9 @@ position: relative;
   }
 }
 
+.box-text {
+  text-align: initial;
+}
 
 
 .timeline {
@@ -93,7 +96,7 @@ position: relative;
         &:before {
           content: "";
           width: 2px;
-          height: 65%;
+          height: 124%;
           background: $color2;
           position: absolute;
           top: 0%;
@@ -179,7 +182,7 @@ position: relative;
       &:before {
         content: "";
         width: 2px;
-        height: 65%;
+        height: 124%;
         background: $color2;
         position: absolute;
         top: 0%;
@@ -205,7 +208,32 @@ position: relative;
       flex-basis: 60%;
     }
 
+    &--type1 {
+      .timeline__event__description {
+        label {
+          color: $color1;
+          font-size: 0.85rem;
+          span {
+            color: $color1;
+            font-size: 0.85rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
     &--type2 {
+      .timeline__event__description {
+        label {
+          color: $color4;
+          font-size: 0.85rem;
+          span {
+            color: $color4;
+            font-size: 0.85rem;
+            font-weight: 600;
+          }
+        }
+      }
       &:after {
         background: $color4;
       }
@@ -239,6 +267,17 @@ position: relative;
     }
 
     &--type3 {
+      .timeline__event__description {
+        label {
+          color: $color5;
+          font-size: 0.85rem;
+          span {
+            color: $color5;
+            font-size: 0.85rem;
+            font-weight: 600;
+          }
+        }
+      }
       &:after {
         background: $color5;
       }
@@ -279,6 +318,8 @@ position: relative;
     }
   }
 }
+
+
 
 @media (max-width: 786px) {
   .timeline__event {

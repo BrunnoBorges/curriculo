@@ -174,6 +174,43 @@ position: relative;
   }
 }
 
+.workCurses {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  p {
+    color: #00d646;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  a {
+      cursor: pointer;
+      color: #00d646 ;
+  }
+  img {
+      width: 250px;
+      border-radius: 10px;
+      margin: 2rem;
+  }
+  .cardCurses {
+    height: 3rem;
+    background: rgb(7, 8, 10, 0.5);
+    width: 8rem;
+    margin: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 5px;
+
+    p {
+      font-size: 0.5rem;
+    }
+  }
+}
+
 .workGraduation {
   display: flex;
   flex-direction: row;
@@ -258,16 +295,25 @@ position: relative;
           .cardUx {
             width: 6rem;
             text-align: center;
+            padding: 0.5rem;
+            height: 4rem;
           }
         }
         .workFront {
           justify-content: center;
-          &:last-child {
-            justify-content: flex-start;
-          }
           .cardFront {
             width: 6rem;
             text-align: center;
+            padding: 0.5rem;
+            height: 4rem;
+          }
+        }
+        .workCurses {
+          .cardCurses {
+            width: 6rem;
+            text-align: center;
+            padding: 0.5rem;
+            height: 4rem;
           }
         }
       }
