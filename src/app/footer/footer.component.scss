@@ -177,3 +177,14 @@ animation: fa-blink .75s linear infinite;
     font-weight: 600;
   }
 }
+
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .scrollToTop {
+    width: 1.5rem;
+    height: 1.5rem;
+    bottom: calc(1.5em + -1rem);
+    right: calc(1.5em + -2rem);
+    background: #fff;
+  }
+}
