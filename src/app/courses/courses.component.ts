@@ -205,7 +205,7 @@ export class CoursesComponent implements OnInit {
 
   graduacao = [
     {
-      link: '',
+      link: '../../assets/img/certificado-unopar-graduacao.jpg',
       name: 'Superior de Tecnologia em Análise de Desenvolvimento de Sistemas'
     }
   ];
