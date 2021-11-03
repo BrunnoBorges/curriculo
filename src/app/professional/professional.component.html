@@ -4,18 +4,10 @@
         <div class="container-card">
             <div class="card">
                 <label>Front End</label>
-                <div class="card-body">
+                <div class="card-body" *ngFor="let item of frontend">
                     <div class="progressBar">
-                        <span>HTML5</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>CSS3</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>JAVASCRIPT</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
+                        <span>{{item.name}}</span>
+                        <p><ngb-progressbar [showValue]="true" type="success" [value]="item.value" [striped]="true"></ngb-progressbar></p>
                     </div>
                 </div>
             </div>
@@ -23,42 +15,10 @@
 
             <div class="card">
                     <label>Framework FrontEnd</label>
-                <div class="card-body">
+                <div class="card-body" *ngFor="let item of framework_frontend">
                     <div class="progressBar">
-                        <span>REACT</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>REACT NATIVE</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="75" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>NEXT.JS</span>
-                        <p><ngb-progressbar [showValue]="true" type="warning" [value]="70" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>STYLED COMPONENT</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>ANGULAR JS</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>ANGULAR IO</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>ANGULAR MATERIAL</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>MATERIALIZE</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>BOOTSTRAP</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
+                        <span>{{item.name}}</span>
+                        <p><ngb-progressbar [showValue]="true" type="success" [value]="item.value" [striped]="true"></ngb-progressbar></p>
                     </div>
                 </div>
             </div>
@@ -66,34 +26,10 @@
       
             <div class="card">
                 <label>UX</label>
-                <div class="card-body">
+                <div class="card-body" *ngFor="let item of ux_ui_designer">
                     <div class="progressBar">
-                        <span>UX WRITER</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>UX RESEARCH</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>TESTE DE USABILIDADE</span>
-                        <p><ngb-progressbar [showValue]="true" type="warning" [value]="70" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>DESIGN DE INTERFACE</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>ANÁLISE HEURÍSTICA</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>DESIGN DE INTERAÇÃO</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="85" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>PROTOTIPAGEM</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
+                        <span>{{item.name}}</span>
+                        <p><ngb-progressbar [showValue]="true" type="success" [value]="item.value" [striped]="true"></ngb-progressbar></p>
                     </div>
                 </div>
             </div>
@@ -102,63 +38,19 @@
             <div class="card">
                 <label>Ferramentas De UX</label>
                 <div class="card-body">
-                    <div class="progressBar">
-                        <span>AXURE</span>
-                        <p><ngb-progressbar [showValue]="true" type="warning" [value]="60" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>FIGMA</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>SKETCH</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="75" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>MARVEL APP</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>GIMP</span>
-                        <p><ngb-progressbar [showValue]="true" type="warning" [value]="70" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>ADOBE PHOTOSHOP</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="75" [striped]="true"></ngb-progressbar></p>
+                    <div class="progressBar" *ngFor="let item of ferramentas_ux_ui">
+                        <span>{{item.name}}</span>
+                        <p><ngb-progressbar [showValue]="true" type="success" [value]="item.value" [striped]="true"></ngb-progressbar></p>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <label>Extras</label>
-                <div class="card-body">
+                <div class="card-body" *ngFor="let item of conhecimento_extra">
                     <div class="progressBar">
-                        <span>GITHUB</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>TRELLO</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>SCRUM</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>REDUX</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>SASS</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>LESS</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="90" [striped]="true"></ngb-progressbar></p>
-                    </div>
-                    <div class="progressBar">
-                        <span>EXPERIÊNCIA COM CI/CD</span>
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="80" [striped]="true"></ngb-progressbar></p>
+                        <span>{{item.name}}</span>
+                        <p><ngb-progressbar [showValue]="true" type="success" [value]="item.value" [striped]="true"></ngb-progressbar></p>
                     </div>
                 </div>
             </div>

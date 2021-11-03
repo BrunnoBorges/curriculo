@@ -1,107 +1,116 @@
-
 <section class="paraImage2">
   <div class="fundo">
-      <h2><label>03</label> Minhas experiências</h2>
-    <div class="timeline"> 
+    <h2><label>03</label> Minhas experiências</h2>
+    <div class="timeline">
       <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
         <div class="timeline__event__icon ">
           <fa-icon [icon]="faBriefcase" class="lni-cake"></fa-icon>
         </div>
+        <ng-container *ngFor="let item of actual_job" >
         <div class="timeline__event__date">
-          <p>cargo</p>
-          <p>atual</p>
+          <p>{{item.dataInicio}}</p>
+            <p>até</p>
+          <p>{{item.dataFim}}</p>
         </div>
-        <div class="timeline__event__content ">
-          <div class="timeline__event__title">
-            Instituto J&F
-          </div>
-          <div class="timeline__event__description">
-            <p>Analista de Sistema SR/ Ux Designer</p>
-            <div class="box-text">
-              <label>Desenv. Plataforma Instituto Germinare - <span>ANGULAR 8</span></label>
-              <label>Desenv. Landing Page Instituto J&F - <span>ANGULAR 10</span></label>
-              <label>Desenv. Plataforma de Admissão Inst. Germinare - <span>ANGULAR 10</span></label>
-              <label>Desenv. Plataforma de Admissão Backoffice Inst. Germinare - <span>ANGULAR 10</span></label>
-              <label>Desenv. APP Instituto Germinare - <span>REACT NATIVE</span></label>
-              <label>Prototipação de Layout para desenvolvimento - <span>FIGMA</span></label>
+
+          <div class="timeline__event__content ">
+            <div class="timeline__event__title">
+              {{item.empresa}}
+            </div>
+            <div class="timeline__event__description">
+              <p>{{item.cargo}}</p>
+              <div class="box-text">
+                <label>{{item.ocupacao_0.atividade}}<span> - {{item.ocupacao_0.tecnologia}}</span></label>
+                <label>{{item.ocupacao_1.atividade}}<span> - {{item.ocupacao_1.tecnologia}}</span></label>
+                <label>{{item.ocupacao_2.atividade}}<span> - {{item.ocupacao_2.tecnologia}}</span></label>
+                <label>{{item.ocupacao_3.atividade}}<span> - {{item.ocupacao_3.tecnologia}}</span></label>
+                <label>{{item.ocupacao_4.atividade}}<span> - {{item.ocupacao_4.tecnologia}}</span></label>
+                <label>{{item.ocupacao_5.atividade}}<span> - {{item.ocupacao_5.tecnologia}}</span></label>
+              </div>
             </div>
           </div>
-        </div>
+        </ng-container>
       </div>
       <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
         <div class="timeline__event__icon">
-            <fa-icon [icon]="faBriefcase" class="lni-cake"></fa-icon>
+          <fa-icon [icon]="faBriefcase" class="lni-cake"></fa-icon>
         </div>
-        <div class="timeline__event__date">
-          <p>05-09-2019</p>
-          <p>até</p>
-          <p>31-01-2021</p>   
-        </div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">
-            Original App
+        <ng-container *ngFor="let item of  third_job">
+          <div class="timeline__event__date">
+            <p>{{item.dataInicio}}</p>
+            <p>até</p>
+            <p>{{item.dataFim}}</p>
           </div>
-          <div class="timeline__event__description">
-            <p>Analista de Sistema PL / Ux Designer</p>
-            <div class="box-text">
-              <label>Desenv. Conta que Rende PF - <span>ANGULAR IO</span></label>
-              <label>Desenv. Conta que Rende PJ <span>ANGULAR IO</span></label>
-              <label>Prototipação de Layout tombamento SalesForce - <span>Sketch</span></label>
+          <div class="timeline__event__content">
+            <div class="timeline__event__title">
+              {{item.empresa}}
+            </div>
+            <div class="timeline__event__description">
+              <p>{{item.cargo}}</p>
+              <div class="box-text">
+                <label>{{item.ocupacao_0.atividade}}<span> - {{item.ocupacao_0.tecnologia}}</span></label>
+                <label>{{item.ocupacao_1.atividade}}<span> - {{item.ocupacao_1.tecnologia}}</span></label>
+                <label>{{item.ocupacao_2.atividade}}<span> - {{item.ocupacao_2.tecnologia}}</span></label>
+              </div>
             </div>
           </div>
-        </div>
+        </ng-container>
       </div>
 
       <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
         <div class="timeline__event__icon">
-            <fa-icon [icon]="faBriefcase" class="lni-cake"></fa-icon>
+          <fa-icon [icon]="faBriefcase" class="lni-cake"></fa-icon>
         </div>
-        <div class="timeline__event__date">
-          <p>25-03-2019</p>
-          <p>até</p>
-          <p>01-09-2019</p>   
-        </div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">
-            Engesoftware Tecnologia S.A
+        <ng-container *ngFor="let item of second_job">
+          <div class="timeline__event__date">
+            <p>{{item.dataInicio}}</p>
+            <p>até</p>
+            <p>{{item.dataFim}}</p>
           </div>
-          <div class="timeline__event__description">
-            <p>Analista de Sistema PL</p>
-            <div class="box-text">
-              <label>Desenv. APP Zápido (Banco do Brasil) - <span>REACT NATIVE</span></label>
-              <label>Desenv. Plataforma Zápido (Banco do Brasil) - <span>ANGULAR 2</span></label>
-              <label>Desenv. Sustentação Plataforma IBPJ - <span>ANGULAR JS</span></label>
-              <label>Prototipação de Layout Zápido (Banco do Brasil) - <span>Sketch</span></label>
+          <div class="timeline__event__content">
+            <div class="timeline__event__title">
+              {{item.empresa}}
             </div>
-          </div>  
-        </div>
+            <div class="timeline__event__description">
+              <p>{{item.cargo}}</p>
+              <div class="box-text">
+                <label>{{item.ocupacao_0.atividade}}<span> - {{item.ocupacao_0.tecnologia}}</span></label>
+                <label>{{item.ocupacao_1.atividade}}<span> - {{item.ocupacao_1.tecnologia}}</span></label>
+                <label>{{item.ocupacao_2.atividade}}<span> - {{item.ocupacao_2.tecnologia}}</span></label>
+                <label>{{item.ocupacao_3.atividade}}<span> - {{item.ocupacao_3.tecnologia}}</span></label>
+              </div>
+            </div>
+          </div>
+        </ng-container>
       </div>
 
       <div class="timeline__event animated fadeInUp timeline__event--type1">
         <div class="timeline__event__icon">
           <fa-icon [icon]="faBriefcase" class="lni-cake"></fa-icon>
         </div>
-        <div class="timeline__event__date">
-          <p>16-10-2017</p>
-          <p>até</p>
-          <p>04-04-2019</p>     
-        </div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">
-              BS Serviço e Tecnologia
+        <ng-container *ngFor="let item of first_job">
+          <div class="timeline__event__date">
+            <p>{{item.dataInicio}}</p>
+            <p>até</p>
+            <p>{{item.dataFim}}</p>
           </div>
-          <div class="timeline__event__description">
-            <p>Analista de Sistema JR</p>
-            <div class="box-text">
-              <label>Desenv. APP Zápido (Banco do Brasil) - <span>REACT NATIVE</span></label>
-              <label>Desenv. Plataforma Zápido (Banco do Brasil) - <span>ANGULAR 2</span></label>
-              <label>Desenv. Sustentação Plataforma IBPJ - <span>ANGULAR JS</span></label>
-              <label>Prototipação de Layout Zápido (Banco do Brasil) - <span>Sketch</span></label>
+          <div class="timeline__event__content">
+            <div class="timeline__event__title">
+              {{item.empresa}}
+            </div>
+            <div class="timeline__event__description">
+              <p>{{item.cargo}}</p>
+              <div class="box-text">
+                <label>{{item.ocupacao_0.atividade}}<span> - {{item.ocupacao_0.tecnologia}}</span></label>
+                <label>{{item.ocupacao_1.atividade}}<span> - {{item.ocupacao_1.tecnologia}}</span></label>
+                <label>{{item.ocupacao_2.atividade}}<span> - {{item.ocupacao_2.tecnologia}}</span></label>
+                <label>{{item.ocupacao_3.atividade}}<span> - {{item.ocupacao_3.tecnologia}}</span></label>
+              </div>
             </div>
           </div>
-        </div>
+        </ng-container>
       </div>
-    
+
     </div>
   </div>
 </section>

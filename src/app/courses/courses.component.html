@@ -4,23 +4,27 @@
       <div class="container">
         <h3>Formações Concluidas</h3>
           <div class="work" >
-            <div *ngFor="let item of formacao">
-              <a href="{{item.link}}" placement="top" ngbTooltip="Visualizar certificado"  target="_blank"  class="card">
-                <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
-                <p>{{item.name}}</p>
+            <ng-container *ngFor="let item of formacao" >
+              <a href="{{item.link}}" placement="top" ngbTooltip="Visualizar certificado"  target="_blank"  >
+                <div class="card">
+                  <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
+                  <p>{{item.name}}</p>
+                </div>
               </a>
-            </div>
+            </ng-container>
           </div>
       </div>
       <div class="container">
         <h3>Cursos UX <fa-icon [icon]="faSketch" class="lni-cake"></fa-icon> <fa-icon [icon]="faFigma" class="lni-cake"></fa-icon> </h3>
           <div class="workUx" >
-            <div *ngFor="let item of cursosUx">
-              <a href="{{item.link}}" placement="top" ngbTooltip="Visualizar certificado" target="_blank"  class="cardUx">
-                <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
-                <p>{{item.name}}</p>
+            <ng-container *ngFor="let item of cursosUx">
+              <a href="{{item.link}}" placement="top" ngbTooltip="Visualizar certificado" target="_blank"  >
+                <div class="cardUx">
+                  <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
+                  <p>{{item.name}}</p>
+                </div>
               </a>
-            </div>
+            </ng-container>
           </div>
       </div>
       <div class="container">
@@ -36,35 +40,37 @@
               <fa-icon [icon]="faBootstrap" class="lni-cake"></fa-icon> 
           </h3>
             <div class="workFront" >
-              <div *ngFor="let item of cursosDesenv">
-                <a href="{{item.link}}" placement="top" ngbTooltip="Visualizar certificado" target="_blank"  class="cardFront">
-                  <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
-                  <p>{{item.name}}</p>
+              <ng-container *ngFor="let item of cursosDesenv">
+                <a href="{{item.link}}" placement="top" ngbTooltip="Visualizar certificado" target="_blank"  >
+                  <div class="cardFront">
+                    <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
+                    <p>{{item.name}}</p>
+                  </div>
                 </a>
-              </div>
+              </ng-container>
             </div>
         </div>
         <div class="container">
           <h3>Cursos Extras </h3>
-            <div class="workCurses" >
-              <div *ngFor="let item of moreCurses">
-                <a href="{{item.link}}" placement="top" ngbTooltip="Visualizar certificado" target="_blank" class="cardCurses">
-                  <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
+          <div class="workCurses" >
+            <div *ngFor="let item of moreCurses">
+              <a href="{{item.link}}" placement="top" ngbTooltip="Visualizar certificado" target="_blank" class="cardCurses">
+                <fa-icon [icon]="faLaptopCode" class="lni-cake"></fa-icon>
+                <p>{{item.name}}</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <h3>Graduação</h3>
+            <div class="workGraduation" >
+              <div *ngFor="let item of graduacao">
+                <a href="{{item.link}}" placement="right" ngbTooltip="Visualizar certificado" target="_blank"  class="cardGraduation">
+                  <fa-icon [icon]="faGraduationCap" class="lni-cake"></fa-icon>
                   <p>{{item.name}}</p>
                 </a>
               </div>
             </div>
-        </div>
-        <div class="container">
-            <h3>Graduação</h3>
-              <div class="workGraduation" >
-                <div *ngFor="let item of graduacao">
-                  <a href="{{item.link}}" placement="right" ngbTooltip="Visualizar certificado" target="_blank"  class="cardGraduation">
-                    <fa-icon [icon]="faGraduationCap" class="lni-cake"></fa-icon>
-                    <p>{{item.name}}</p>
-                  </a>
-                </div>
-              </div>
           </div>
   </div>
 </section>

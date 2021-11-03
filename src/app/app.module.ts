@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -13,6 +14,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { CoursesComponent } from './courses/courses.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
+import { CurriculoService } from './services/curriculo.service';
 
 @NgModule({
   declarations: [
@@ -29,9 +31,12 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    CurriculoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

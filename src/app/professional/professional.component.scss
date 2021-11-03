@@ -39,10 +39,14 @@
 
 .card-body {
     padding: 0;
+    flex: initial;
 }
 
 .progressBar {
   margin: auto;
+  span {
+    text-transform: uppercase;
+  }
 }
 
 .fundo {
