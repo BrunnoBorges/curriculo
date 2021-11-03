@@ -13,23 +13,23 @@ export class CurriculoService {
   constructor(private http: HttpClient) { }
   
   getHomeDetails() {
-    // return this.http.get(`${environment.api}/home`);
-    return this.http.get(`${this.SERVER_URL}/home`);
+    return this.http.get(`${environment.api}/home`);
+    // return this.http.get(`${this.SERVER_URL}/home`);
   }
 
   getCoursesDetails() {
-    // return this.http.get(`${environment.api}/home`);
-    return this.http.get(`${this.SERVER_URL}/cursos`);
+    return this.http.get(`${environment.api}/cursos`);
+    // return this.http.get(`${this.SERVER_URL}/cursos`);
   }
 
   getProfessionalDetails() {
-    // return this.http.get(`${environment.api}/home`);
-    return this.http.get(`${this.SERVER_URL}/profissional`);
+    return this.http.get(`${environment.api}/profissional`);
+    // return this.http.get(`${this.SERVER_URL}/profissional`);
   }
 
   getExperienceDetails() {
-    // return this.http.get(`${environment.api}/home`);
-    return this.http.get(`${this.SERVER_URL}/experiencia`);
+    return this.http.get(`${environment.api}/experiencia`);
+    // return this.http.get(`${this.SERVER_URL}/experiencia`);
   }
 
 
