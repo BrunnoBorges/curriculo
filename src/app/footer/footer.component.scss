@@ -60,20 +60,41 @@
 }
 .copyright-text {
   margin: 0;
+  a {
+    color: #00d646;
+    &:visited {
+      color: #00d646;
+    }  
+    &:hover {
+      color: #00d646;
+      filter: brightness(0.9);
+    }
+  }
 }
 .scrollToTop {
   width: 2rem;
   height: 2rem;
   border-radius: 50px;
-  background: rgb(255, 255, 255, 0.5);
+  background-color: #33353d;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   bottom: calc(1.5em + 5.5rem);
   right: calc(1.5em + -5rem);
-  a {
+  &:hover {
+    filter: brightness(0.9);
+  }
+  .howTo {
     cursor: pointer;
+    text-decoration: none;
+    color: #00d646;
+    &:visited {
+      color: #00d646;
+    }  
+    &:hover {
+      color: #00d646;
+    }
   }
 }
 .custom-info {

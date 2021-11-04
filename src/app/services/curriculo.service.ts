@@ -32,6 +32,11 @@ export class CurriculoService {
     // return this.http.get(`${this.SERVER_URL}/experiencia`);
   }
 
+  getMidiasSociais() {
+    return this.http.get(`${environment.api}/midias`);
+    // return this.http.get(`${this.SERVER_URL}/midias-sociais`);
+  }
+
 
 }
 

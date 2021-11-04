@@ -1,27 +1,37 @@
 <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
-           <a href="https://github.com/BrunnoBorges">Brunno Borges</a>.
-              </p>
-            </div>
-  
-            <div class="col-md-4 col-sm-6 col-xs-12 custom-info">
-              <p class="fa-blink">Meus Contatos</p>
-              <ul class="social-icons">
-                <li><a class="gitHub" href="https://github.com/BrunnoBorges" target="_blank"><fa-icon [icon]="faGithub" class="icon"></fa-icon></a></li>
-                <li><a class="linkedin" href="https://www.linkedin.com/in/obrunnodiego/" target="_blank"><fa-icon [icon]="faLinkedin" class="icon"></fa-icon></a></li>   
-                <li><a class="whatzap" href="https://api.whatsapp.com/send?phone=+5561991500959" target="_blank"><fa-icon [icon]="faWhatsapp" class="icon"></fa-icon></a></li>
-                <li><a class="instagram" href="https://www.instagram.com/obrunnodiego/" target="_blank"><fa-icon [icon]="faInstagram" class="icon"></fa-icon></a></li>
-                <li><a class="gmail" href="mailto:obrunnodiego@gmail.com"  target="_blank"><fa-icon [icon]="faGoogle" class="icon"></fa-icon></a></li>
-              </ul>
-              <div class="scrollToTop">
-                  <a (click)="onEdit()" class="howTo">
-                    <fa-icon [icon]="faChevronUp" class="icon"></fa-icon>
-                  </a>
-              </div>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+          <a href={{midias.github}}>{{namePerson}}</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 custom-info">
+        <p class="fa-blink">Meus Contatos</p>
+        <ul class="social-icons">
+          <li><a class="gitHub" href={{midias.github}} target="_blank">
+              <fa-icon [icon]="faGithub" class="icon"></fa-icon>
+            </a></li>
+          <li><a class="linkedin" href={{midias.linkedin}} target="_blank">
+              <fa-icon [icon]="faLinkedin" class="icon"></fa-icon>
+            </a></li>
+          <li><a class="whatzap" href={{midias.whatsap}} target="_blank">
+              <fa-icon [icon]="faWhatsapp" class="icon"></fa-icon>
+            </a></li>
+          <li><a class="instagram" href={{midias.instagran}} target="_blank">
+              <fa-icon [icon]="faInstagram" class="icon"></fa-icon>
+            </a></li>
+          <li><a class="gmail" href={{midias.gmail}} target="_blank">
+              <fa-icon [icon]="faGoogle" class="icon"></fa-icon>
+            </a></li>
+        </ul>
+        <div class="scrollToTop">
+          <a (click)="onEdit()" class="howTo">
+            <fa-icon [icon]="faChevronUp" class="icon"></fa-icon>
+          </a>
         </div>
-  </footer>
+      </div>
+    </div>
+  </div>
+</footer>

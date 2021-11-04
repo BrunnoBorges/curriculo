@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faInstagram, faLinkedin, faWhatsapp, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { CurriculoService } from '../services/curriculo.service';
 
 @Component({
   selector: 'app-footer',
@@ -16,10 +17,26 @@ export class FooterComponent implements OnInit {
   faChevronUp = faChevronUp;
   faGoogle = faGoogle;
 
-  constructor() { }
+  midias: any;
+  namePerson: string
+
+  constructor(private curriculoService: CurriculoService) { }
 
   ngOnInit(): void {
+
+    this.curriculoService.getMidiasSociais().subscribe((data) => {
+      this.midias = data[0];
+    }, (error) => {
+
+    });
+
+    this.curriculoService.getHomeDetails().subscribe((data) => {
+      this.namePerson = data[0].name.split(' ').slice(0, 2).join(' ');;
+    }, (error) => {
+      console.log('error', error)
+    });
   }
+
 
   onEdit(){
     window.scrollTo({
