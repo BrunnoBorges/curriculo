@@ -45,7 +45,7 @@ export class CoursesComponent implements OnInit {
   curriculo = [
     {
       link: '../../assets/img/curriculo-Brunno.pdf',
-      name: 'Curriculo PDF'
+      name: 'Currículo PDF'
     }
   ];
   constructor(private curriculoService: CurriculoService) {}
