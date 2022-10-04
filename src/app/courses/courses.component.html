@@ -62,15 +62,26 @@
           </div>
         </div>
         <div class="container">
-            <h3>Graduação</h3>
-            <div class="workGraduation" >
-              <div *ngFor="let item of graduacao">
-                <a href="{{item.link}}" placement="right" ngbTooltip="Visualizar certificado" target="_blank"  class="cardGraduation">
-                  <fa-icon [icon]="faGraduationCap" class="lni-cake"></fa-icon>
-                  <p>{{item.name}}</p>
-                </a>
-              </div>
+          <h3>Graduação</h3>
+          <div class="workGraduation" >
+            <div *ngFor="let item of graduacao">
+              <a href="{{item.link}}" placement="right" ngbTooltip="Visualizar certificado" target="_blank"  class="cardGraduation">
+                <fa-icon [icon]="faGraduationCap" class="lni-cake"></fa-icon>
+                <p>{{item.name}}</p>
+              </a>
             </div>
           </div>
+        </div>
+        <div class="container">
+          <h3>Curriculo PDF</h3>
+          <div class="workGraduation" >
+            <div *ngFor="let item of curriculo">
+              <a href="{{item.link}}" placement="right" ngbTooltip="Visualizar certificado" target="_blank"  class="cardGraduation">
+                <fa-icon [icon]="faFilePdf" class="lni-cake"></fa-icon>
+                <p>{{item.name}}</p>
+              </a>
+            </div>
+          </div>
+        </div>
   </div>
 </section>

@@ -214,9 +214,12 @@ position: relative;
 
     &--type1 {
       .timeline__event__description {
-        label {
+        p {
           color: $color1;
           font-size: 0.85rem;
+        }
+        li {
+          color: $color1;
           span {
             color: $color1;
             font-size: 0.85rem;
@@ -228,9 +231,12 @@ position: relative;
 
     &--type2 {
       .timeline__event__description {
-        label {
+        p {
           color: $color4;
           font-size: 0.85rem;
+        }
+        li {
+          color: $color4;
           span {
             color: $color4;
             font-size: 0.85rem;
@@ -272,9 +278,12 @@ position: relative;
 
     &--type3 {
       .timeline__event__description {
-        label {
+        p {
           color: $color5;
           font-size: 0.85rem;
+        }
+        li {
+          color: $color5;
           span {
             color: $color5;
             font-size: 0.85rem;

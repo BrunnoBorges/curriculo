@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCertificate, faGraduationCap, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import { faSketch, faFigma, faHtml5, faCss3Alt, faJsSquare, faReact, faAngular, faGithub, faSass, faBootstrap, faNpm } from '@fortawesome/free-brands-svg-icons';
+import { faCertificate, faGraduationCap, faLaptopCode, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faSketch, faFigma, faHtml5, faCss3Alt, faJsSquare, faReact, faAngular, faGithub, faSass, faBootstrap, faNpm,  } from '@fortawesome/free-brands-svg-icons';
 import { CurriculoService } from '../services/curriculo.service';
 
 
@@ -25,6 +25,7 @@ export class CoursesComponent implements OnInit {
   faSass = faSass;
   faBootstrap = faBootstrap;
   faNpm = faNpm;
+  faFilePdf = faFilePdf;
 
   formacao: any;
   cursosUx: any;
@@ -39,6 +40,12 @@ export class CoursesComponent implements OnInit {
     {
       link: '../../assets/img/certificado-unopar-graduacao.jpg',
       name: 'Superior de Tecnologia em Análise de Desenvolvimento de Sistemas'
+    }
+  ];
+  curriculo = [
+    {
+      link: '../../assets/img/curriculo-Brunno.pdf',
+      name: 'Curriculo PDF'
     }
   ];
   constructor(private curriculoService: CurriculoService) {}
