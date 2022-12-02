@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  api: 'https://rest-api-curriculo.herokuapp.com',
+  // api: 'https://rest-api-curriculo.herokuapp.com',
+  api: 'https://web-production-cc4b.up.railway.app'
 };
 
 /*
