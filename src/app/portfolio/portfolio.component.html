@@ -1,28 +1,86 @@
 <section class="exemplo">
   <div class="fundo">
     <h2><label>02</label> Portifólio</h2>
-    <div class="work">
-        <a href="https://quiz-cod.brunnoborges.vercel.app/" target="_blank" placement="bottom" ngbTooltip="CLIQUE NA IMAGEM PARA JOGAR QUIZ">
-          <img src="../../assets/img/cod.png"/>
-        </a>
-        <a href="https://bru-flix.brunnoborges.vercel.app/" target="_blank" placement="bottom"ngbTooltip="CLIQUE NA IMAGEM PARA RIR COM COMEDIFLIX">
-          <img src="../../assets/img/comediflix.png"/>
-        </a>
-        <a href="https://loading-speed-marker.brunnoborges.vercel.app/" target="_blank" placement="bottom" ngbTooltip="CLIQUE NA IMAGEM PARA VISUALIZAR SPINNER">
-          <img src="../../assets/img/spinner.png"/>
-        </a>
-        <a href="https://stepper-progress-brunnoborges.vercel.app/" target="_blank" placement="bottom" ngbTooltip=" CLIQUE NA IMAGEM PARA VISUALIZAR STEPPER PROGRESS">
-          <img src="../../assets/img/stepper_progress.png"/>
-        </a>
-        <a href="https://seufuturocomecaaqui.com.br/" target="_blank" placement="bottom" ngbTooltip=" CLIQUE NA IMAGEM PARA VISUALIZAR LANDING PAGE DO INSTITUTO">
-          <img src="../../assets/img/germinare_tec.png"/>
-        </a>
-        <a href="https://seufuturocomecaaqui.com.br/seara-congresso" target="_blank" placement="bottom" ngbTooltip=" CLIQUE NA IMAGEM PARA VISUALIZAR LANDING PAGE DO INSTITUTO">
-          <img src="../../assets/img/seara-congresso.png"/>
-        </a>
-        <a href="https://pokedex-brunnoborges.vercel.app/" target="_blank" placement="bottom" ngbTooltip=" CLIQUE NA IMAGEM PARA VISUALIZAR MINHA POKEDEX">
-          <img src="../../assets/img/pokedex.png"/>
-        </a>
+    <div class="container">
+      <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a href="https://quiz-cod.brunnoborges.vercel.app/" target="_blank" placement="bottom" ngbTooltip="CLIQUE AQUI">
+              <img [src]="images[0]" alt="Random first slide" />
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3>CLIQUE AQUI !!!</h3>
+            <p>Aproveite seus conhecimentos e responda o QUIZ</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a href="https://bru-flix.brunnoborges.vercel.app/" target="_blank" placement="bottom" ngbTooltip="CLIQUE AQUI">
+              <img [src]="images[1]" alt="Random first slide" />
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3>CLIQUE AQUI !!!</h3>
+            <p>Aproveite para dar um pouco de risada.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a href="https://loading-speed-marker.brunnoborges.vercel.app/" target="_blank" placement="bottom" ngbTooltip="CLIQUE NA IMAGEM PARA VISUALIZAR SPINNER">
+              <img [src]="images[2]" alt="Random first slide" />
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3>CLIQUE AQUI !!!</h3>
+            <p>Spinner criado somente com HTML e CSS</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a href="https://stepper-progress-brunnoborges.vercel.app/" target="_blank" placement="bottom" ngbTooltip="CLIQUE NA IMAGEM PARA VISUALIZAR STEPPER PROGRESS">
+              <img [src]="images[3]" alt="Random first slide" />
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3 style="color: #555555;">CLIQUE AQUI !!!</h3>
+            <p style="color: #555555;">Barra de progresso criada somente com HTML e CSS</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a href="https://seufuturocomecaaqui.com.br/" target="_blank" placement="bottom" ngbTooltip="CLIQUE NA IMAGEM PARA VISUALIZAR LANDING PAGE DO INSTITUTO">
+              <img [src]="images[4]" alt="Random first slide" />
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3>CLIQUE AQUI !!!</h3>
+            <p>Projeto de landing page institucional.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a href="https://seufuturocomecaaqui.com.br/seara-congresso" target="_blank" placement="bottom" ngbTooltip="CLIQUE NA IMAGEM PARA VISUALIZAR LANDING PAGE DO INSTITUTO">
+              <img [src]="images[5]" alt="Random first slide" />
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3 style="color: #555555;">CLIQUE AQUI!!!</h3>
+            <p style="color: #555555;">Projeto de landing page institucional.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a href="https://pokedex-brunnoborges.vercel.app/" target="_blank" placement="bottom" ngbTooltip="CLIQUE NA IMAGEM PARA VISUALIZAR MINHA POKEDEX">
+              <img [src]="images[6]" alt="Random first slide" />
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3>CLIQUE AQUI !!!</h3>
+            <p>E se aventure no mundo Pokémon</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
     </div>
   </div>
 </section>

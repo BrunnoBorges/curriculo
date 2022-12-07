@@ -3,7 +3,10 @@
         <h2><label>01</label> Meus conhecimentos</h2>
         <div class="container-card">
             <div class="card">
-                <label>Front End</label>
+                <div class="title">
+                    <img src="assets/img/developer.gif" alt="">
+                    <label>Front End</label>
+                </div>
                 <div class="card-body" *ngFor="let item of frontend">
                     <div class="progressBar">
                         <span>{{item.name}}</span>
@@ -14,7 +17,10 @@
 
 
             <div class="card">
+                <div class="title">
+                    <img src="assets/img/code.gif" alt="">
                     <label>Framework FrontEnd</label>
+                </div>
                 <div class="card-body" *ngFor="let item of framework_frontend">
                     <div class="progressBar">
                         <span>{{item.name}}</span>
@@ -25,7 +31,10 @@
       
       
             <div class="card">
-                <label>UX</label>
+                <div class="title">
+                    <img src="assets/img/photo.gif" alt="">
+                    <label>UX</label>
+                </div>
                 <div class="card-body" *ngFor="let item of ux_ui_designer">
                     <div class="progressBar">
                         <span>{{item.name}}</span>
@@ -36,7 +45,10 @@
 
 
             <div class="card">
-                <label>Ferramentas De UX</label>
+                <div class="title">
+                    <img src="assets/img/computer.gif" alt="">
+                    <label>Ferramentas De UX</label>
+                </div>
                 <div class="card-body">
                     <div class="progressBar" *ngFor="let item of ferramentas_ux_ui">
                         <span>{{item.name}}</span>
@@ -46,7 +58,10 @@
             </div>
 
             <div class="card">
-                <label>Extras</label>
+                <div class="title">
+                    <img src="assets/img/cloud.gif" alt="">
+                    <label>Extras</label>
+                </div>
                 <div class="card-body" *ngFor="let item of conhecimento_extra">
                     <div class="progressBar">
                         <span>{{item.name}}</span>
@@ -61,3 +76,45 @@
 
   </div>
 </section>
+
+
+
+
+<!-- <section class="paraImage1">
+    <div class="fundo">
+          <h2><label>01</label> Meus conhecimentos</h2>
+          <div class="container-card">
+              <div class="card">
+                  <img src="assets/img/computer2.gif" alt="">
+                  <h3>Designer</h3>
+                  <div class="text">
+                      <p>Eu valorizo ​​uma estrutura de conteúdo simples, padrões de design limpos e interações inteligentes.</p>
+                      <h5>Área de atuação:</h5>
+                      <ul *ngFor="let item of ux_ui_designer">
+                          <li>{{item.name}}</li>
+                      </ul>
+                      <h5>Conhecimento em ferramentas como:</h5>
+                      <ul *ngFor="let item of ferramentas_ux_ui">
+                          <li>{{item.name}}</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="assets/img/code.gif" alt="">
+                  <h3>FrontEnd Developer</h3>
+                  <div class="text">
+                      <p>Gosto de codificar coisas do zero e gosto de dar vida às ideias no navegador.</p>
+                      <h5>Área de atuação:</h5>
+                      <ul *ngFor="let item of framework_frontend">
+                          <li>{{item.name}}</li>
+                      </ul>
+                      <h5>Conhecimento em ferramentas como:</h5>
+                      <ul *ngFor="let item of ">
+                          <li>{{item.name}}</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+    </div>
+  </section> -->
+  

@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  images: any[];
+
+  constructor() {
+    this.images = [
+      '../../assets/img/cod.png',
+      '../../assets/img/comediflix.png',
+      '../../assets/img/spinner.png',
+      '../../assets/img/stepper_progress.png',
+      '../../assets/img/germinare_tec.png',
+      '../../assets/img/seara-congresso.png',
+      '../../assets/img/pokedex.png'
+    ]
+   }
 
   ngOnInit(): void {
   }
