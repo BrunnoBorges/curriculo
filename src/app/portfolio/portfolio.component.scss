@@ -61,6 +61,7 @@
 
     img {
       width: 50rem;
+      height: 25rem;
     }
 }
 
@@ -85,6 +86,17 @@
           font-size: 1rem;
         }
       }
+    }
+  }
+  .picsum-img-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 20rem;
+      height: 20rem;
+      margin: 0 0 1rem 0;
     }
   }
 }

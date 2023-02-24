@@ -17,7 +17,8 @@ export class PortfolioComponent implements OnInit {
       '../../assets/img/stepper_progress.png',
       '../../assets/img/germinare_tec.png',
       '../../assets/img/seara-congresso.png',
-      '../../assets/img/pokedex.png'
+      '../../assets/img/pokedex.png',
+      '../../assets/img/clima.png'
     ]
    }
 
