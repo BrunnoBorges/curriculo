@@ -84,7 +84,9 @@ position: relative;
     margin: $spacing 0;
     border-radius: $bdrs;
     align-self: center;
-    width: 50vw;
+    // width: 50vw;
+    width: 80%;
+    justify-content: flex-end;
 
     &:nth-child(2n + 1) {
       flex-direction: row-reverse;
@@ -140,13 +142,14 @@ position: relative;
         0 18px 36px -18px rgba(0, 0, 0, 0.3),
         0 -12px 36px -8px rgba(0, 0, 0, 0.025);
       background: #fff;
-      width: $content-width;
+      // width: $content-width;
       border-radius: 0 $bdrs $bdrs 0;
       z-index: 999;
     }
     &__date {
       color: $color2;
-      font-size: 1rem;
+      width: 20rem;
+      font-size: .8rem;
       font-weight: 600;
       background: $color1;
       display: flex;
@@ -156,6 +159,7 @@ position: relative;
       white-space: nowrap;
       padding: 0 $spacing;
       border-radius: $bdrs 0 0 $bdrs;
+      z-index: 99;
       p {
         margin: 0;
       }
@@ -356,6 +360,7 @@ position: relative;
     &__date {
       border-radius: 0;
       padding: $spacing;
+      width: 100%;
     }
 
     &:nth-child(2n + 1) {
